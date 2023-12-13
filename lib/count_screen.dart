@@ -35,7 +35,7 @@ final now = DateTime.now();
 final newYear = DateTime(now.year + 1, 1, 1);
 
 // 1 января следующего года
-final difference = newYear.difference(now).inDays;
+final difference = newYear.difference(now).inDays - 17;
 
 class CountdownScreen extends StatelessWidget {
   const CountdownScreen({super.key});
@@ -54,9 +54,13 @@ class CountdownScreen extends StatelessWidget {
 
 getDayName(lastDigit) {
   String dayName = 'дней';
-  if (lastDigit == 1) {
+  if (lastDigit == 1 && difference != 11) {
     return dayName = 'день';
-  } else if (lastDigit == 2 || lastDigit == 3 || lastDigit == 4) {
+  } else if (lastDigit == 2 && difference != 12) {
+    return dayName = 'дня';
+  } else if (lastDigit == 3 && difference != 13) {
+    return dayName = 'дня';
+  } else if (lastDigit == 4 && difference != 14) {
     return dayName = 'дня';
   } else {
     return dayName;
