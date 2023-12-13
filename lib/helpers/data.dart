@@ -17,7 +17,7 @@ getDayName(lastDigit) {
 
 getLeftDay(lastDigit) {
   String leftDay = 'осталось';
-  if (lastDigit == 1) {
+  if (lastDigit == 1 && difference != 11) {
     return leftDay = 'остался';
   } else {
     return leftDay;
