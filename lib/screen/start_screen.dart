@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_year_2024/text_style.dart';
+import 'package:new_year_2024/helpers/text_style.dart';
 
 class StartScreen extends StatelessWidget {
   const StartScreen({super.key});

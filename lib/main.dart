@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flame_audio/flame_audio.dart';
 import 'package:flutter/services.dart';
-import 'package:new_year_2024/count_screen.dart';
-import 'package:new_year_2024/start_screen.dart';
+import 'package:new_year_2024/screen/count_screen.dart';
+import 'package:new_year_2024/screen/start_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
