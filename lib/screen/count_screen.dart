@@ -47,7 +47,10 @@ class CountdownScreen extends StatelessWidget {
       body: SizedBox(
         height: double.infinity,
         width: double.infinity,
-        child: Center(child: difference == 0 ? myWidget24() : myWidget23()),
+        child: Center(
+            child: (difference == 0 || difference < 0)
+                ? myWidget24()
+                : myWidget23()),
       ),
     );
   }

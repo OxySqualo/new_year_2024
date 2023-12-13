@@ -12,7 +12,6 @@ void main() {
   FlameAudio.bgm.initialize();
   FlameAudio.bgm.play('elochka.mp3', volume: 0.2);
 }
-
 class NewYearApp extends StatelessWidget {
   const NewYearApp({super.key});
 
